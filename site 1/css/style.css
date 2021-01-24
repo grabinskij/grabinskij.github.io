@@ -432,6 +432,7 @@ animation-iteration-count: infinite;
 .services__items{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 .services__item{
     max-width: 360px;
