@@ -6,10 +6,10 @@ $ (function(){
     });
     $('select').styler();
 
-    $('.header__btn-menu').on('click', function(){
-        $('.menu ul').slideToggle();
-
-    });
+     $('.header__btn-menu, .menu ul li a').click(function(event){
+            $('.header__btn-menu, .menu ul').toggleClass('active');
+        
+        });
 
 
 
