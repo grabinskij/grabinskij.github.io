@@ -499,6 +499,8 @@ button.dropbtn{
 }
 .centerblock__basket img{
     transition: all 0.4s ease;
+    width: 35px;
+    height: auto;
 }
 .centerblock__basket img:hover{
      transform: scale(1.2);
