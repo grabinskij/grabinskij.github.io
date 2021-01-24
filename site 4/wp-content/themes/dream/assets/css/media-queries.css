@@ -1,0 +1,248 @@
+@media only screen and (max-width: 1180px){
+    .header__inner{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .header__inner-wrapper{
+        display: flex;
+        justify-content: space-around ;
+        flex-wrap: wrap;
+    }
+    .header__name{
+        padding-left: 0;
+    }
+    .header__title{
+        padding-right: 40px;
+        font-size: 28px;
+    }
+    #nav-wrap ul li{
+        margin: 30px 0 30px -60px;
+    }
+    #nav-wrap li{
+        border-radius: 80%;
+        padding: 15px 5px;
+        font-size: 18px;
+    }
+    #nav-wrap{
+        float: none;
+    }
+}
+
+
+@media only screen and (max-width: 1100px){
+    .header__title{
+        margin-top: 20px;
+    }
+    #nav-wrap ul li{
+        margin: 0px 0 35px -60px;
+    }
+}
+
+
+@media only screen and (max-width: 1040px){
+    .header__name,
+    .phone{
+        font-size: 22px;
+    }
+    #nav-wrap li{
+        padding: 15px 5px;
+    }
+    #nav-wrap{
+        font-size: 16px;
+    }
+    .main__title{
+        font-size: 34px;
+    }
+    .main__text p{
+        font-size: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .project__title{
+        font-size: 32px;
+    }
+    .project__name,
+    .project__name-2{
+        font-size: 22px;
+    }
+    .project__dscr,
+    .project__dscr-2{
+        font-size: 16px;
+    }
+    #gallery-1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;  
+    }
+    #gallery-1 .gallery-item{
+        width: auto !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 900px){
+    .project__images{
+        margin-bottom: -50px;
+    }
+    .project__images-wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project__images-wrap-2{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .project__discription{
+        width: 512px;
+    }
+    .project__name,
+    .project__dscr{
+        padding-left: 0;
+    }
+    .project__name-2,
+    .project__dscr-2{
+        padding-right: 0;
+    }
+    .main__title{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .main__text{
+        font-size: 18px;
+    }
+    .project__link a{
+        font-size: 16px;
+        width: 400px;
+        height: 40px;
+        padding-top: 6px;
+    }
+    .project__link{
+        padding-left: 0;
+    }
+    .download__link a{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+    .gallery__title{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+    .gallery__text{
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+    .footer__phone a,
+    .footer__email{
+        font-size: 26px;
+    }
+   
+}
+
+@media only screen and (max-width: 640px){
+    .header__name{
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .phone{
+        margin-left: 0;
+    }
+    .footer__phone a,
+    .footer__email{
+        font-size: 22px;
+    }
+    #nav-wrap li{
+        margin-bottom: 50px;    
+        padding: 12px 2px;  
+    }
+    #nav-wrap {
+       font: 12px bold, sans-serif;
+    }
+    .wpforms-field-container{
+        width: 400px !important;
+    }
+   
+}
+
+@media only screen and (max-width: 570px){
+    .header__name{
+        margin-bottom: 20px;
+    }
+    .phone{
+        margin-bottom: 20px;
+    }
+    .header__title{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .footer__contacts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__phone a,
+    .footer__email{
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    .project__images-item-1 img,
+    .project__images-item-2 img{
+        width: 100%;
+        height: auto;
+    }
+    .main__title{
+        font-size: 22px;
+    }
+    .main__text p{
+        font-size: 16px;
+    }
+    .project__link a{
+        font-size: 14px;
+        width: 300px;
+        padding-top: 8px;
+    }
+    .project__link a span{
+        display: none;
+    }
+    .download img{
+        width: 100%;
+        height: auto;
+    }
+    .download__link a{
+        font-size: 14px;
+        width: 100%;
+        height: auto;
+        width: 300px;
+        padding: 6px 0px;
+    }
+    .wpforms-field-container{
+        width: 300px !important;
+    }
+   
+}
+
+
+@media only screen and (max-width: 380px){
+    .header__name,
+    .header__title,
+    .phone{
+        font-size: 20px;
+    }
+    .header__name,
+    .header__title{
+        width: 300px;
+    }
+    .header__inner{
+        display: flex;
+        justify-content: center;   
+    }
+    #nav-wrap{
+        padding-right: 0;
+        margin-left: 0;
+    }
+}
