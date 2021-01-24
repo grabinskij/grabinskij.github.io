@@ -131,6 +131,7 @@
     }
     .header__contacts{
         text-align: center;
+        margin-right: -10px;
     }
     .header__btn:before{
         display: none; 
@@ -174,7 +175,7 @@
         padding-left: 0;
     }
 }
-@media(max-width: 605px){
+@media(max-width: 594px){
     .services__item{
         max-width: 100%;
         min-height: 375px;
