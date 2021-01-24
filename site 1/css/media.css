@@ -5,7 +5,7 @@
     .services__item{
         max-width: 80%;
         min-height: 330px;
-        margin: 30px auto;
+        margin: 40px auto;
     }
     .form__inner{
         background-image: none;
@@ -179,7 +179,6 @@
     .services__item{
         max-width: 100%;
         min-height: 375px;
-        margin: 30px auto;
     }
     .header__top{
         min-height: 140px;
