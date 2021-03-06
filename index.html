@@ -1,43 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
-        a{
-            font-size: 48px;
+
+        
+        .container {
+            max-width: 1220px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+
+        a {
+            font-size: 36px;
             text-align: center;
             padding: 10px;
         }
-        p{
-            font-size: 28px;
-            text-align: center;
+
+        p {
+            font-size: 16px;
+            text-align: left;
+            padding-right: 10px;
+            padding-left: 20px;
         }
-        img{
+        h1 {
+            text-align: center;
+            color:#264653; 
+            font-size: 28px; 
+            margin-bottom: 20px; 
+            font-weight: 700;
+        }
+
+        .photo img {
+            margin-top: 40px;
+            display: block;
+            box-shadow: none;
+            width: 208px;
+            height: 208px;
+            padding-right: 80px;
+            padding-left: 40px;
+        }
+
+        .content-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+
+        .text {
+            padding: 0 10px;
+        }
+
+        .jambotron {
+            background-color: #e9ecef;
+        }
+
+        .box {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+            margin: 20px 20px;
             width: 260px;
             height: 240px;
-            box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
-            margin: 0 20px;
-/*             animation-name: arrow;
-            animation-duration: 6s;
-            animation-iteration-count: infinite; */
+            overflow: hidden;
+            position: relative;
         }
+
+        .box .content:hover {
+            overflow: hidden;
+        }
+
+        .box:hover .content {
+            -webkit-transform: scale(1.5) rotate(15deg);
+            transform: scale(1.5) rotate(15deg);
+        }
+
+        .content {
+            -webkit-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
+        }
+
+        .content img {
+            width: 100%;
+        }
+
+        .my-projects {
+            text-transform: uppercase;
+            text-align: center;
+            color: #264653;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            font-size: 20px;
+            font-weight: 700
+        }
+        .projects-inner{
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+        }
+
+        .box:hover .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            bottom: 0;
+            height: 100%;
+        }
+
+        .box:hover .overlay .overlay-info .block {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .box:hover .overlay .overlay-info .block {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .overlay {
+            background-color: #000;
+            color: #fff;
+            left: 0;
+            right: 0;
+            bottom: -100%;
+            height: 0;
+            position: absolute;
+            text-align: center;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .overlay .overlay-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .overlay-info .block {
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 30px 10px;
+        }
+
+        .overlay-info .block.html {
+            background-color: #e96228;
+            color: #000;
+        }
+
+        .overlay-info .block.css {
+            background-color: #2862e9;
+        }
+
+        .overlay-info .block.scss {
+            background-color: #cf649a;
+        }
+
+        .overlay-info .block.jquery {
+            background-color: #0769ad;
+        }
+
+        .overlay-info .block.javascript {
+            background-color: #efd81d;
+            color: #000;
+        }
+
+        .overlay-info .block.wordpress {
+            background-color: #207196;
+        }
+
+        .overlay-info .block.php {
+            background-color: #7377ad;
+        }
+
+        .overlay-info .block.gulp {
+            background-color: #ca4545;
+        }
+
+        .angle {
+            border-left: 3px solid #e9ecef;
+            border-top: 3px solid #e9ecef;
+            width: 250px;
+            height: 255px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+
+/* *************Media queries***************
+********************************************/
+
+        @media(max-width: 915px) {
+            p {
+                font-size: 14px;
+            }
+        }
+
+
+        @media(max-width: 800px) {
+            .photo img {
+                padding-right: 20px;
+                padding-left: 20px;
+                margin-top: 20px;
+            }
+
+            .angle {
+                width: 210px;
+                height: 210px;
+            }
+        }
+
+
+        @media(max-width: 768px) {
+            p {
+                font-size: 12px;
+            }
+
+            .content-block {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .angle {
+                display: none;
+            }
+
+            .photo img {
+                margin-bottom: 30px;
+            }
+
+            .my-projects {
+                margin: 10px auto 0;
+            }
+        }
+
     </style>
 </head>
+
+
+
 <body>
+    <div class="container">
+        <div class="angle"></div>
+        <div class="content-block">
+            <div class="photo animate__animated animate__flipInY animate__slower">
+                <img class="photo" src="portfolio-photo-small.png" alt="">
+            </div>
+            <div class="jambotron animate__animated animate__fadeInDownBig animate__slow text ">
+                <h1>Hi there!</h1>
+                <p>My name is Bohdan.</p>
 
-<div style="text-align: center;">
-    <h1 style="text-align: center; color:#264653; font-size: 60px; margin-bottom: 30px;">Hello!</h1>
-        <p>My name is Bogdan. I like web development.</p>
-        <p style="margin-bottom: 30px;">Please, look through my projects below</p>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <a href="/site 1"><img src="site1.png" alt="image1"></a>
-    <a href="/site 2/app/"><img src="site2.png" alt="image2"></a>
-    <a href="/site 3/app/"><img src="site3.png" alt="image3"></a>
-    <a href="/site 4"><img src="site4.png" alt="image4"></a>
+                <p>I am a web developer with 1 year experience. My path to exploring modern information technology was self-education along with university studies. So I obtained a master's degree in Computer Engineering. After graduation, I was gaining practical experience in the company that develops websites powered by CMS Drupal and Wordpress.</p>
+
+                <p>I accumulated the most experience while creating Landing Pages. My further goals are to become a front-end developer, and later a full stack developer.</p>
+
+                <p>I employ modern technologies in my work, such as HTML5, CSS3, SCSS, JavaScript, jQuery, PHP, Wordpress and
+                    others, and use cross-browser and adaptive coding.</p>
+
+                <p>I like working with technologies. Besides, I have passion of traveling, sports, reading, and self-improvement.</p>
+            </div>
+        </div>
+        <p class="my-projects animate__animated animate__slideInRight animate__slow">My projects</p>
+        <div style="border-bottom: 1px solid #000; width: 90%; margin: 5px auto 7px;"></div>
+        <div style="width: 0; height: 0; border-left: 60px solid transparent; border-right: 60px solid transparent; 
+        border-top: 20px solid #e9ecef; margin: 0 auto 10px;"></div>
+        <div class="jambotron animate__animated animate__fadeInUpBig animate__slow ">
+            <div class="projects-inner">
+
+                <div class="box">
+                    <div class="content"><img src="site1.png" alt="site1"></div>
+                    <a href="/site 1">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-text">
+                                    <div class="overlay-info">
+                                        <div class="block html">html</div>
+                                        <div class="block css">css</div>
+                                        <div class="block scss">scss</div>
+                                        <div class="block jquery">jquery</div>
+                                        <div class="block javascript">javascript</div>
+                                        <div class="block gulp">gulp</div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <div class="content"><img src="site2.png" alt="site2"></div>
+                    <a href="/site 2">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-text">
+                                    <div class="overlay-info">
+                                        <div class="block html">html</div>
+                                        <div class="block css">css</div>
+                                        <div class="block scss">scss</div>
+                                        <div class="block jquery">jquery</div>
+                                        <div class="block javascript">javascript</div>
+                                        <div class="block gulp">gulp</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="box">
+                    <div class="content"><img src="site3.png" alt="site3"></div>
+                    <a href="/site 3">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-text">
+                                    <div class="overlay-info">
+                                        <div class="block html">html</div>
+                                        <div class="block css">css</div>
+                                        <div class="block scss">scss</div>
+                                        <div class="block jquery">jquery</div>
+                                        <div class="block javascript">javascript</div>
+                                        <div class="block gulp">gulp</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="box">
+                    <div class="content"><img src="site4.png" alt="site4"></div>
+                    <a href="/site 4">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <div class="overlay-text">
+                                    <div class="overlay-info">
+                                        <div class="block html">html</div>
+                                        <div class="block css">css</div>
+                                        <div class="block wordpress">wordpress</div>
+                                        <div class="block jquery">jquery</div>
+                                        <div class="block php">php</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
     </div>
-</div>
-
 </body>
+
 </html>
