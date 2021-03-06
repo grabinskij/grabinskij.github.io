@@ -7,10 +7,9 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
-
-        
         .container {
             max-width: 1220px;
             margin: 0 auto;
@@ -23,7 +22,6 @@
         }
 
         a {
-            font-size: 36px;
             text-align: center;
             padding: 10px;
         }
@@ -34,24 +32,55 @@
             padding-right: 10px;
             padding-left: 20px;
         }
+
         h1 {
             text-align: center;
-            color:#264653; 
-            font-size: 28px; 
-            margin-bottom: 20px; 
+            color: #264653;
+            font-size: 28px;
+            margin-bottom: 20px;
             font-weight: 700;
         }
 
+        .about {
+            padding-right: 80px;
+            padding-left: 40px;
+        }
+        .contacts .far.fa-envelope{
+            text-align: left;
+            padding: 0;
+        }
+        .icon{
+            text-align: center;
+        }
+        .icon a{
+            padding: 0 10px;
+        }
+        .fa-stack {
+            display: inline;
+        }
+        .fab { 
+             text-shadow: 2px 2px 4px #dadada;
+        }
+        .fab:hover{
+            transition: 0.5s 0.1s;
+            transform: scale(1.2)
+        }
         .photo img {
             margin-top: 40px;
             display: block;
             box-shadow: none;
             width: 208px;
             height: 208px;
-            padding-right: 80px;
-            padding-left: 40px;
         }
-
+        .fab.fa-telegram {
+            color: #009bdc;
+        }
+        .fab.fa-facebook {
+            color: #1773ea;
+        }
+        .far.fa-envelope span{
+            padding-left: 5px;
+        }
         .content-block {
             display: flex;
             justify-content: space-between;
@@ -88,7 +117,7 @@
             -webkit-transition: all 0.8s ease-in-out;
             transition: all 0.8s ease-in-out;
         }
-
+ 
         .content img {
             width: 100%;
         }
@@ -102,9 +131,10 @@
             font-size: 20px;
             font-weight: 700
         }
-        .projects-inner{
-            display: flex; 
-            flex-wrap: wrap; 
+
+        .projects-inner {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
         }
 
@@ -112,16 +142,6 @@
             background-color: rgba(0, 0, 0, 0.6);
             bottom: 0;
             height: 100%;
-        }
-
-        .box:hover .overlay .overlay-info .block {
-            margin-bottom: 0;
-            margin-top: 0;
-        }
-
-        .box:hover .overlay .overlay-info .block {
-            margin-bottom: 0;
-            margin-top: 0;
         }
 
         .overlay {
@@ -136,24 +156,25 @@
             -webkit-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out;
         }
-
         .overlay .overlay-content {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
         }
-
+        .overlay-info{
+            margin-top: 10px;
+        }
         .overlay-info .block {
             border: none;
             color: white;
-            padding: 8px 20px;
+            padding: 6px 15px;
             border-radius: 8px;
             text-transform: uppercase;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 12px;
-            margin: 30px 10px;
+            margin: 5px 10px;
         }
 
         .overlay-info .block.html {
@@ -202,7 +223,7 @@
 
 
 
-/* *************Media queries***************
+        /* *************Media queries***************
 ********************************************/
 
         @media(max-width: 915px) {
@@ -213,9 +234,11 @@
 
 
         @media(max-width: 800px) {
-            .photo img {
+            .about{
                 padding-right: 20px;
                 padding-left: 20px;
+            }
+            .photo img {
                 margin-top: 20px;
             }
 
@@ -236,7 +259,9 @@
                 justify-content: center;
                 flex-wrap: wrap;
             }
-
+            .contacts{
+                margin-bottom: 20px;
+            }
             .angle {
                 display: none;
             }
@@ -249,7 +274,6 @@
                 margin: 10px auto 0;
             }
         }
-
     </style>
 </head>
 
@@ -259,21 +283,39 @@
     <div class="container">
         <div class="angle"></div>
         <div class="content-block">
-            <div class="photo animate__animated animate__flipInY animate__slower">
-                <img class="photo" src="portfolio-photo-small.png" alt="">
+            <div class="about">
+                <div class="photo animate__animated animate__flipInY animate__slower">
+                    <img class="photo" src="portfolio-photo-small.png" alt="">
+                </div>
+                <div class="contacts animate__animated animate__slideInLeft animate__slow">
+                    <p style="font-size: 16px; font-weight: bold; text-align: center; padding: 0; margin: 30px 0 0;">Contact me:</p>
+                    <div class="icon">
+                        <span class="fa-stack fa-2x">
+                            <a href="https://t.me/grabinskij"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.facebook.com/bogdan.grabinsky/"><i class="fab fa-facebook"></i></a>
+                        </span>
+                    </div>
+                    <i class="far fa-envelope"><span>bogdan.grabinskij@gmail.com</span></i>
+                </div>
             </div>
             <div class="jambotron animate__animated animate__fadeInDownBig animate__slow text ">
                 <h1>Hi there!</h1>
                 <p>My name is Bohdan.</p>
 
-                <p>I am a web developer with 1 year experience. My path to exploring modern information technology was self-education along with university studies. So I obtained a master's degree in Computer Engineering. After graduation, I was gaining practical experience in the company that develops websites powered by CMS Drupal and Wordpress.</p>
+                <p>I am a web developer with 1 year experience. My path to exploring modern information technology was
+                    self-education along with university studies. So I obtained a master's degree in Computer
+                    Engineering. After graduation, I was gaining practical experience in the company that develops
+                    websites powered by CMS Drupal and Wordpress.</p>
 
-                <p>I accumulated the most experience while creating Landing Pages. My further goals are to become a front-end developer, and later a full stack developer.</p>
+                <p>I accumulated the most experience while creating Landing Pages. My further goals are to become a
+                    front-end developer, and later a full stack developer.</p>
 
-                <p>I employ modern technologies in my work, such as HTML5, CSS3, SCSS, JavaScript, jQuery, PHP, Wordpress and
+                <p>I employ modern technologies in my work, such as HTML5, CSS3, SCSS, JavaScript, jQuery, PHP,
+                    Wordpress and
                     others, and use cross-browser and adaptive coding.</p>
 
-                <p>I like working with technologies. Besides, I have passion of traveling, sports, reading, and self-improvement.</p>
+                <p>I like working with technologies. Besides, I have passion of traveling, sports, reading, and
+                    self-improvement.</p>
             </div>
         </div>
         <p class="my-projects animate__animated animate__slideInRight animate__slow">My projects</p>
@@ -295,7 +337,7 @@
                                         <div class="block scss">scss</div>
                                         <div class="block jquery">jquery</div>
                                         <div class="block javascript">javascript</div>
-                                        <div class="block gulp">gulp</div>                                        
+                                        <div class="block gulp">gulp</div>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +346,7 @@
                 </div>
                 <div class="box">
                     <div class="content"><img src="site2.png" alt="site2"></div>
-                    <a href="/site 2/app/">
+                    <a href="/site 2">
                         <div class="overlay">
                             <div class="overlay-content">
                                 <div class="overlay-text">
@@ -321,10 +363,10 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <div class="box">
                     <div class="content"><img src="site3.png" alt="site3"></div>
-                    <a href="/site 3/app/">
+                    <a href="/site 3">
                         <div class="overlay">
                             <div class="overlay-content">
                                 <div class="overlay-text">
@@ -341,7 +383,7 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <div class="box">
                     <div class="content"><img src="site4.png" alt="site4"></div>
                     <a href="/site 4">
@@ -360,7 +402,7 @@
                         </div>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </div>
