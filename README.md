@@ -25,15 +25,15 @@ This project is open-source and available under the MIT License.
 To view the portfolio on your local machine:
 
 1. **Clone this repository**:
- ```bash
+   ```bash
     git clone https://github.com/grabinskij/grabinskij.github.io.git
 
 2. **Navigate to the project directory**:
-```bash
+   ```bash
    cd grabinskij.github.io
 
 3. **Open index.html in your browser**:
- ```bash
+   ```bash
     open index.html
 
 ## 🤝 Let's Connect
