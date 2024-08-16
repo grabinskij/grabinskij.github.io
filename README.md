@@ -2,8 +2,7 @@
 
 Welcome to my portfolio! This is my first portfolio built using **HTML**, **CSS**, **SCSS**, and **JavaScript**. Here, I showcase my skills, projects, and a bit about myself. Feel free to explore and reach out if you have any feedback or just want to connect!
 
-
-
+<br><br>
 
 ## 🌟 Features
 
@@ -12,8 +11,7 @@ Welcome to my portfolio! This is my first portfolio built using **HTML**, **CSS*
 - **SCSS Powered Styling**: The styling is written in SCSS, making it easier to maintain and extend.
 - **Interactive Elements**: JavaScript adds interactivity for a dynamic and engaging user experience.
 
-
-
+<br><br>
 
 ## 🛠️ Tech Stack
 
@@ -22,13 +20,13 @@ Welcome to my portfolio! This is my first portfolio built using **HTML**, **CSS*
 - **SCSS**: A CSS preprocessor used to write cleaner and more maintainable CSS code.
 - **JavaScript**: Adding dynamic functionality and interactivity to the portfolio.
 
+<br><br>
 
 ## 📝 License
 
 This project is open-source and available under the MIT License.
 
-
-
+<br><br>
 
 ## 🔥 How to Run Locally
 
@@ -36,7 +34,7 @@ To view the portfolio on your local machine:
 
 1. **Clone this repository**:
    ```bash
-    git clone https://github.com/grabinskij/grabinskij.github.io.git
+   git clone https://github.com/grabinskij/grabinskij.github.io.git
 
 2. **Navigate to the project directory**:
    ```bash
@@ -44,10 +42,9 @@ To view the portfolio on your local machine:
 
 3. **Open index.html in your browser**:
    ```bash
-    open index.html
+   open index.html
 
-
-
+<br><br>
 
 ## 🤝 Let's Connect
 
