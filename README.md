@@ -1,41 +1,44 @@
-Portfolio Website
-Overview
-This is my first personal portfolio website, developed using HTML, CSS, SCSS, and JavaScript. It showcases my projects, skills, and provides a platform to connect with me. The website is responsive, ensuring a seamless experience across different devices.
+# 🚀 My Portfolio
 
-Features
-Responsive Design: The portfolio is fully responsive, ensuring a great experience on mobile, tablet, and desktop devices.
-Interactive UI: Utilizes JavaScript to create interactive elements like modals, sliders, and navigation.
-Modern Styling: SCSS is used to write modular and maintainable CSS, with features like variables, mixins, and nesting.
-Projects Showcase: A dedicated section to display my projects, including links to GitHub repositories and live demos.
-Contact Form: A functional contact form that allows visitors to reach out directly from the website.
-Smooth Scrolling: Enhances user experience by providing smooth transitions between sections.
-Technologies Used
-HTML5: For structuring the content on the web pages.
-CSS3: For styling and layout of the web pages.
-SCSS: For writing more maintainable and modular CSS.
-JavaScript: For adding interactivity to the website.
+Welcome to my portfolio! This is my first portfolio built using **HTML**, **CSS**, **SCSS**, and **JavaScript**. Here, I showcase my skills, projects, and a bit about myself. Feel free to explore and reach out if you have any feedback or just want to connect!
 
-Installation
-To run this project locally, follow these steps:
+## 🌟 Features
 
-Clone the repository:
-git clone https://github.com/grabinskij/grabinskij.github.io
+- **Fully Responsive Design**: Adapts to any screen size, ensuring a seamless user experience on desktops, tablets, and mobile devices.
+- **Modern UI/UX**: Clean and intuitive user interface with smooth animations.
+- **SCSS Powered Styling**: The styling is written in SCSS, making it easier to maintain and extend.
+- **Interactive Elements**: JavaScript adds interactivity for a dynamic and engaging user experience.
 
-Navigate to the project directory:
-cd grabinskij.github.io
+## 🛠️ Tech Stack
 
-Open index.html in your browser:
-Simply double-click on the index.html file or run it using a live server extension in your code editor.
+- **HTML5**: For structuring the content of the portfolio.
+- **CSS3**: For styling the pages.
+- **SCSS**: A CSS preprocessor used to write cleaner and more maintainable CSS code.
+- **JavaScript**: Adding dynamic functionality and interactivity to the portfolio.
 
-Contributing
-If you have any suggestions or improvements, feel free to fork the repository and submit a pull request. You can also open an issue for any bugs or feature requests.
+## 📝 License
 
-License
 This project is open-source and available under the MIT License.
 
-Contact
-Feel free to reach out to me via the contact form on the website, or connect with me on:
+## 🔥 How to Run Locally
 
-LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/bohdan-hrabynskyi/)
-GitHub: [https://github.com/grabinskij](https://github.com/grabinskij)
-Email: [hrabynskyi.dev@gmail.com](hrabynskyi.dev@gmail.com)
+To view the portfolio on your local machine:
+
+1. **Clone this repository**:
+ ```bash
+    git clone https://github.com/grabinskij/grabinskij.github.io.git
+
+2. **Navigate to the project directory**:
+```bash
+   cd grabinskij.github.io
+
+3. **Open index.html in your browser**:
+ ```bash
+    open index.html
+
+## 🤝 Let's Connect
+
+Feel free to reach out! I'm always open to feedback and opportunities to collaborate.
+- **LinkedIn**: [https://www.linkedin.com/in/bohdan-hrabynskyi](https://www.linkedin.com/in/bohdan-hrabynskyi)
+- **GitHub**: [https://github.com/grabinskij](https://github.com/grabinskij)
+- **Email**: [hrabynskyi.dev@gmail.com](mailto:hrabynskyi.dev@gmail.com)
